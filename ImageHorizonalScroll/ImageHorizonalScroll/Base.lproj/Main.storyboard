@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageHorizonalScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJy-b9-nZm">
+                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hss-hL-uIA">
+                                        <rect key="frame" x="0.0" y="0.0" width="3400" height="666"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinchan" translatesAutoresizingMaskIntoConstraints="NO" id="RH0-i3-xov">
+                                                <rect key="frame" x="0.0" y="0.0" width="850" height="666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinchan" translatesAutoresizingMaskIntoConstraints="NO" id="Xnn-ty-Zzn">
+                                                <rect key="frame" x="850" y="0.0" width="850" height="666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinchan" translatesAutoresizingMaskIntoConstraints="NO" id="flW-KP-9C7">
+                                                <rect key="frame" x="1700" y="0.0" width="850" height="666"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shinchan" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-Ov-2c1">
+                                                <rect key="frame" x="2550" y="0.0" width="850" height="666"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RH0-i3-xov" firstAttribute="leading" secondItem="Hss-hL-uIA" secondAttribute="leading" id="02O-A7-x22"/>
+                                            <constraint firstItem="Xnn-ty-Zzn" firstAttribute="top" secondItem="Hss-hL-uIA" secondAttribute="top" id="0sW-br-ept"/>
+                                            <constraint firstAttribute="bottom" secondItem="flW-KP-9C7" secondAttribute="bottom" id="4o7-AV-4Z7"/>
+                                            <constraint firstItem="RH0-i3-xov" firstAttribute="top" secondItem="Hss-hL-uIA" secondAttribute="top" id="8Zq-XN-3WM"/>
+                                            <constraint firstItem="flW-KP-9C7" firstAttribute="top" secondItem="Hss-hL-uIA" secondAttribute="top" id="F7u-Ti-84d"/>
+                                            <constraint firstItem="Xnn-ty-Zzn" firstAttribute="leading" secondItem="RH0-i3-xov" secondAttribute="trailing" id="GLQ-iM-AzM"/>
+                                            <constraint firstItem="flW-KP-9C7" firstAttribute="leading" secondItem="Xnn-ty-Zzn" secondAttribute="trailing" id="LdA-nz-Xo0"/>
+                                            <constraint firstAttribute="bottom" secondItem="RH0-i3-xov" secondAttribute="bottom" id="PF6-jP-yG4"/>
+                                            <constraint firstItem="f4J-Ov-2c1" firstAttribute="leading" secondItem="flW-KP-9C7" secondAttribute="trailing" id="SuX-gL-JHs"/>
+                                            <constraint firstAttribute="trailing" secondItem="f4J-Ov-2c1" secondAttribute="trailing" id="Vcg-T3-VHL"/>
+                                            <constraint firstItem="Xnn-ty-Zzn" firstAttribute="leading" secondItem="RH0-i3-xov" secondAttribute="trailing" id="XCL-DQ-Bw4"/>
+                                            <constraint firstItem="f4J-Ov-2c1" firstAttribute="top" secondItem="Hss-hL-uIA" secondAttribute="top" id="XTH-AV-ydN"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xnn-ty-Zzn" secondAttribute="bottom" id="b5x-iI-CYk"/>
+                                            <constraint firstAttribute="bottom" secondItem="f4J-Ov-2c1" secondAttribute="bottom" id="ejN-OH-tkd"/>
+                                            <constraint firstItem="flW-KP-9C7" firstAttribute="leading" secondItem="Xnn-ty-Zzn" secondAttribute="trailing" id="oYf-ex-l9H"/>
+                                            <constraint firstItem="f4J-Ov-2c1" firstAttribute="leading" secondItem="flW-KP-9C7" secondAttribute="trailing" id="ymL-rI-yLd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hss-hL-uIA" firstAttribute="leading" secondItem="EvR-Cl-4fs" secondAttribute="leading" id="4AJ-at-fL3"/>
+                                    <constraint firstItem="Hss-hL-uIA" firstAttribute="bottom" secondItem="EvR-Cl-4fs" secondAttribute="bottom" id="N1f-Ro-PPg"/>
+                                    <constraint firstItem="Hss-hL-uIA" firstAttribute="trailing" secondItem="EvR-Cl-4fs" secondAttribute="trailing" id="ZgM-O8-IHh"/>
+                                    <constraint firstItem="Hss-hL-uIA" firstAttribute="height" secondItem="VEj-bL-Dhf" secondAttribute="height" id="rvx-sB-uQZ"/>
+                                    <constraint firstItem="Hss-hL-uIA" firstAttribute="top" secondItem="EvR-Cl-4fs" secondAttribute="top" id="uKa-5W-Sb7"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="EvR-Cl-4fs"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="VEj-bL-Dhf"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248.09160305343511" y="110.56338028169014"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shinchan" width="850" height="478"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
